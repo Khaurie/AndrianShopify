@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pet Check-up Service</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .hero-section {
+      background-image: url('https://example.com/pet-checkup-bg.jpg');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      text-align: center;
+      padding: 100px 0;
+    }
+    .hero-section h1 {
+      font-size: 3rem;
+      font-weight: bold;
+    }
+    .hero-section p {
+      font-size: 1.2rem;
+    }
+    .service-info {
+      padding: 50px 0;
+    }
+    .service-info h2 {
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+    .service-info p {
+      font-size: 1.1rem;
+    }
+    .appointment-btn {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Hero Section -->
+<section class="hero-section">
+  <div class="container">
+    <h1>Comprehensive Pet Check-up</h1>
+    <p>Ensure your pet stays happy and healthy with our professional check-up services.</p>
+  </div>
+</section>
+
+<!-- Service Info Section -->
+<section class="service-info">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <img src="https://example.com/pet-checkup-1.jpg" alt="Pet Check-up" class="img-fluid rounded">
+      </div>
+      <div class="col-md-6">
+        <h2>Why Regular Check-ups Are Important</h2>
+        <p>Regular check-ups are essential for maintaining your pet's health. Our check-up services include a full health assessment, vaccinations, parasite prevention, and nutritional advice. Whether your pet is young or old, routine veterinary visits help to catch potential health issues early and keep them feeling their best.</p>
+        <ul>
+          <li>Complete health assessment</li>
+          <li>Vaccination updates</li>
+          <li>Parasite prevention</li>
+          <li>Nutritional guidance</li>
+        </ul>
+        <a href="#appointmentModal" class="btn btn-primary appointment-btn" data-bs-toggle="modal">Make an Appointment</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Appointment Modal -->
+<div class="modal fade" id="appointmentModal" tabindex="-1" aria-labelledby="appointmentModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="appointmentModalLabel">Schedule a Check-up Appointment</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="petOwnerName" class="form-label">Your Name</label>
+            <input type="text" class="form-control" id="petOwnerName" placeholder="John Doe" required>
+          </div>
+          <div class="mb-3">
+            <label for="petName" class="form-label">Pet's Name</label>
+            <input type="text" class="form-control" id="petName" placeholder="Fido" required>
+          </div>
+          <div class="mb-3">
+            <label for="appointmentDate" class="form-label">Preferred Date</label>
+            <input type="date" class="form-control" id="appointmentDate" required>
+          </div>
+          <button type="submit" class="btn btn-primary w-100">Book Appointment</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Bootstrap JS Bundle (includes Popper.js) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
