@@ -8,7 +8,9 @@
     <link rel="icon" href="/SASA/main/favicon/favicon-32x32.png" type="image/png">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/footers/">
+    <!-- Bootstrap core CSS -->
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
     <nav class="navbar navbar-expand-lg"  style="background-color: #f8f9fa;">
@@ -27,9 +29,12 @@
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <!-- Home Link -->
             <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
             </li>
-    
+            
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="">Cart</a>
+            </li>
             <!-- Features Link -->
             <li class="nav-item">
                 <a class="nav-link" href="components/Features.html">Features</a>
@@ -37,22 +42,26 @@
     
             <!-- Dropdown Menu -->
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <a class="nav-link dropdown-toggle" href="/SASA/main/components/Service.html" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Services
                 </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <li><a class="dropdown-item" href="#">Pet Check-up</a></li>
-                <li><a class="dropdown-item" href="#">Pet Spa</a></li>
-                <li><a class="dropdown-item" href="#">Pet Grooming</a></li>
+                <li><a class="dropdown-item" href="/SASA/main/components/service/Pet Check-up.html">Pet Check-up</a></li>
+                <li><a class="dropdown-item" href="/SASA/main/components/service/Pet Spa.html">Pet Spa</a></li>
+                <li><a class="dropdown-item" href="/SASA/main/components/service/Pet Grooming.html">Pet Grooming</a></li>
             </ul>
             </li>
-    
+
+            <li class="nav-item"></li>
+                <a class="nav-link active" aria-current="page" href="/SASA/main/components/User.html">User</a>
+            </li>
             <!-- Contact Link -->
             <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
+                <a class="nav-link" href="/SASA/main/components/Contact.html">Contact</a>
             </li>
             </ul>
-    
+
+
             <!-- Right Side: Search Bar, Button, etc. -->
             <form class="d-flex">
             <!-- Search Bar -->
@@ -80,7 +89,68 @@
     </div>
 </section>
 
+<div class="container">
+    <footer class="py-5">
+      <div class="row">
+        <div class="col-2">
+          <h5>Section</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+          </ul>
+        </div>
+  
+        <div class="col-2">
+          <h5>Section</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+          </ul>
+        </div>
+<div class="col-2">
+    <h5>Section</h5>
+    <ul class="nav flex-column">
+      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+    </ul>
+  </div>
+
+  <div class="col-4 offset-1">
+    <form>
+      <h5>Subscribe to our newsletter</h5>
+      <p>Monthly digest of whats new and exciting from us.</p>
+      <div class="d-flex w-100 gap-2">
+        <label for="newsletter1" class="visually-hidden">Email address</label>
+        <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+        <button class="btn btn-primary" type="button">Subscribe</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<div class="d-flex justify-content-between py-4 my-4 border-top">
+  <p>&copy; 2021 Company, Inc. All rights reserved.</p>
+  <ul class="list-unstyled d-flex">
+    <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"/></svg></a></li>
+    <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"/></svg></a></li>
+    <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"/></svg></a></li>
+  </ul>
+</div>
+</footer>
+</div>
+
+
     <script src="main.js"></script>
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
